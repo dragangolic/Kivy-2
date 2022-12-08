@@ -45,6 +45,41 @@ CanvasExample4:
         text: "A"
         on_press: root.on_button_a_click()
 
+<CanvasExample6>:
+    BoxLayout:
+        size: root.size
+        Widget:
+            canvas:
+                Color:
+                    rgb: 0, 1, 0
+                Rectangle:
+                    size: self.size
+        RealativeLayout:
+            canvas:
+                Color:
+                    rgb: 0, 0, 1
+                Rectangle:
+                    size: self.size
+
+<CanvasExample7>:
+    RealativeLayout:
+          canvas:
+              Color:
+                  rgb: 0, 0, 1
+              Rectangle:
+                  size: self.size
+    RealativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 1, 1
+            Rectangle:
+                size: self.size
+    RealativeLayout:
+        canvas:
+            Color:
+                rgb: 1, 0, 0
+            Rectangle:
+                size: self.size
 
 
 <ImagesExample@GridLayout>:
